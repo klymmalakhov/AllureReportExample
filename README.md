@@ -2,7 +2,9 @@
 
 For now, it is ready only Web with
 * Page Object Pattern
-* Component pattern
+* Steps pattern
+* Chain of invocation pattern
+* WebDriver Factory pattern
 * WebDriver - Selenium
 * TestNG
 * Decorator pattern - Log4J
