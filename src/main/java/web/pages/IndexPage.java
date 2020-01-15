@@ -1,5 +1,6 @@
 package web.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -28,7 +29,7 @@ public class IndexPage extends BasePage {
     @FindBy(xpath = "//aside//a[@href='/']")
     private WebElement MENU_ITEM_MAIN;
 
-
+    @Step("Validate that menu is displayed")
     public void validateThatMenuDisplayed() {
         log.info("Validate the user menu");
         super.elementShouldBe(MENU_USER_NAME, "displayed");

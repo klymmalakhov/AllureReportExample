@@ -29,7 +29,7 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = "//*[@inputmode='email']")
     private WebElement INPUT_USER_EMAIL;
 
-
+    @Step("Login into as saved user")
     public IndexPage login() {
         log.info("Make a login");
         openLoginForm()

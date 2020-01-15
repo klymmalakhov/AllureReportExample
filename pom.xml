@@ -22,7 +22,7 @@
         <environment>canva</environment>
 
         <!-- Versions of libraries: Dependencies -->
-        <testng.version>6.14.3</testng.version>
+        <testng.version>7.0.0</testng.version>
         <selenium.version>3.141.59</selenium.version>
         <slf4j.version>1.7.25</slf4j.version>
         <restassured.version>3.2.0</restassured.version>
@@ -81,6 +81,7 @@
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-testng</artifactId>
             <version>${allure.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>
@@ -124,5 +125,19 @@
 
         </plugins>
     </build>
+
+<!--    <reporting>-->
+<!--        <excludeDefaults>true</excludeDefaults>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>io.qameta.allure</groupId>-->
+<!--                <artifactId>allure-maven</artifactId>-->
+<!--                <version>2.9</version>-->
+<!--                <configuration>-->
+<!--                    <reportVersion>2.6.0</reportVersion>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </reporting>-->
 
 </project>

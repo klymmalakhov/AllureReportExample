@@ -1,13 +1,23 @@
 import drivers.Drivers;
+import listener.AllureReportListener;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
+
+
+
+
+@Listeners({
+        AllureReportListener.class,
+})
 
 public class BaseTest {
     static WebDriver driver;
 
     @BeforeClass
     public static void setUp(){
+
         Drivers.create(Drivers.DEFAULT_DRIVER_NAME, Drivers.CHROME_DRIVER);
         driver = Drivers.get(Drivers.DEFAULT_DRIVER_NAME);
     }

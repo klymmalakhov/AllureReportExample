@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name ="[UI] Smoke suite">
+
+    <test name="E2E UI tests">
+        <classes>
+            <class name="LoginCanvaTest"/>
+        </classes>
+    </test>
+
+</suite>
