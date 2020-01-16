@@ -28,3 +28,5 @@ logs/
 target/
 *.iml
 build
+/.allure/
+/allure-results/

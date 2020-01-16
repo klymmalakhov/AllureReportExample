@@ -18,7 +18,6 @@ public class LoginCanvaTest extends BaseTest{
     public void loginCanvaTest(){
 
         driver.get(PropertyHolder.getPropValue("URL_Login"));
-        step("step1");
         LoginPage loginPage = new LoginPage(driver);
         loginPage
                 .login()
