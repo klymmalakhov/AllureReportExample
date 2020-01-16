@@ -24,4 +24,18 @@ public class LoginCanvaTest extends BaseTest{
                 .validateThatMenuDisplayed();
 
     }
+
+    @Test(description = "Parallel testing", groups = {smoke})
+    public void secondTest() throws InterruptedException {
+
+        Thread.sleep(5000);
+
+    }
+
+    @Test(description = "Parallel testing", groups = {smoke})
+    public void thirdTest() throws InterruptedException {
+
+        Thread.sleep(5000);
+
+    }
 }
